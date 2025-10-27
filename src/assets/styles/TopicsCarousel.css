@@ -1,0 +1,144 @@
+.topics-carousel {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-card {
+  position: absolute;
+  width: 300px;
+  height: 280px;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateX(calc(var(--position) * 120%)) scale(0.8);
+  pointer-events: none;
+}
+
+.carousel-card.active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  pointer-events: auto;
+}
+
+.carousel-card:not(.active) {
+  opacity: 0.5;
+  filter: blur(2px) grayscale(0.2);
+}
+
+.card-content.from-red-100.to-red-200 .topic-icon {
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  color: #dc2626;
+}
+
+.card-content.from-blue-100.to-blue-200 .topic-icon {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  color: #2563eb;
+}
+
+.card-content.from-green-100.to-green-200 .topic-icon {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  color: #16a34a;
+}
+
+.card-content.from-yellow-100.to-yellow-200 .topic-icon {
+  background: linear-gradient(135deg, #fef9c3 0%, #fef08a 100%);
+  color: #ca8a04;
+}
+
+.card-content.from-purple-100.to-purple-200 .topic-icon {
+  background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+  color: #9333ea;
+}
+
+.card-content.from-indigo-100.to-indigo-200 .topic-icon {
+  background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+  color: #4f46e5;
+}
+
+@media (max-width: 1024px) {
+  .carousel-card {
+    width: 280px;
+    height: 260px;
+  }
+
+  .card-content {
+    padding: 1.1rem;
+  }
+
+  .topic-icon {
+    font-size: 2.5rem;
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-card {
+    width: 260px;
+    height: 240px;
+  }
+
+  .carousel-button {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .topic-icon {
+    font-size: 2.25rem;
+    width: 45px;
+    height: 45px;
+  }
+
+  .card-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .topic-button {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-card {
+    width: 240px;
+    height: 220px;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  .carousel-button {
+    display: none;
+  }
+} 

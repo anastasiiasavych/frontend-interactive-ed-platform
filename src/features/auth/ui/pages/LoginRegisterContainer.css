@@ -1,0 +1,94 @@
+.auth-bg {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.loginreg-bg {
+  background: linear-gradient(45deg, #a5b4fc, #fbcfe8);
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.loginreg-container {
+  position: relative;
+  z-index: 1;
+  width: 800px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-bg-waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 320px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.text-container {
+  width: 50%;
+  min-width: 320px;
+  max-width: 420px;
+  background: linear-gradient(90deg, #fff 0%, #d6b4fc 100%) !important;
+  border-radius: 2.2rem;
+  backdrop-filter: none !important;
+  border: 2.5px solid #e0e7ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 38px 26px 30px 26px;
+  box-sizing: border-box;
+  position: static;
+  height: 100%;
+  color: #2563eb;
+  margin: 0 auto;
+}
+
+.text-container.sign-up-text {
+  background: linear-gradient(90deg, #ffe0b2 0%, #fff 100%) !important;
+  color: #22223b;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-weight: 500;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.form-container.sign-up-container {
+  width: 50%;
+  min-width: 320px;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 2.2rem;
+  backdrop-filter: none !important;
+  border: 2.5px solid #e0e7ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 38px 26px 30px 26px;
+  box-sizing: border-box;
+  position: static;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  margin: 0 auto;
+}
+

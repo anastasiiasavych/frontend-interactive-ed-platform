@@ -1,0 +1,187 @@
+.login-illustration {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.starbucks-cup {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.cup-body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 50% 50% 0 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cup-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(135deg, #F0E4D2 0%, #E6D7B8 100%);
+  border-radius: 50% 50% 0 0;
+}
+
+.cup-middle {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: #E6D7B8;
+  border-radius: 50% 50% 0 0;
+}
+
+.cup-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: #E6D7B8;
+}
+
+.cup-handle {
+  position: absolute;
+  right: -40px;
+  top: 40%;
+  width: 80px;
+  height: 120px;
+  background: #E6D7B8;
+  border-radius: 0 50px 50px 0;
+  transform: rotate(20deg);
+}
+
+.cup-shadow {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.starbucks-logo {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 20px 0;
+}
+
+.logo-circle {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.logo-starbucks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: linear-gradient(45deg, #006633, #004D26);
+  border-radius: 50%;
+}
+
+.coffee-splash {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.splash-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #E6D7B8;
+  border-radius: 50%;
+  animation: splash 1.5s infinite;
+}
+
+.splash-dot:nth-child(1) {
+  left: -20px;
+  animation-delay: 0s;
+}
+
+.splash-dot:nth-child(2) {
+  left: 0;
+  animation-delay: 0.2s;
+}
+
+.splash-dot:nth-child(3) {
+  left: 20px;
+  animation-delay: 0.4s;
+}
+
+@keyframes splash {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.coffee-steam {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.steam-dot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: steam 2s infinite;
+}
+
+.steam-dot:nth-child(1) {
+  left: -10px;
+  animation-delay: 0s;
+}
+
+.steam-dot:nth-child(2) {
+  left: 0;
+  animation-delay: 0.2s;
+}
+
+.steam-dot:nth-child(3) {
+  left: 10px;
+  animation-delay: 0.4s;
+}
+
+@keyframes steam {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scale(2);
+    opacity: 0;
+  }
+}

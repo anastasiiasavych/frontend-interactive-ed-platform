@@ -1,0 +1,5 @@
+.login-orange-blue-btn {
+  background: linear-gradient(90deg, #fa7328 0%, #8a5fd6 60%, #2563eb 100%) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 20px #2563eb22;
+}

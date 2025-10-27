@@ -1,0 +1,146 @@
+.question-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.question-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.question-image {
+  width: 100%;
+  max-height: 300px;
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa;
+}
+
+.question-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.explanation {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-right: 4px solid #64b5f6;
+}
+
+.explanation h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.explanation p {
+  margin: 0;
+  color: #495057;
+  line-height: 1.5;
+}
+
+.quiz-completed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 2rem;
+}
+
+.quiz-result-card {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.quiz-result-card h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.score {
+  font-size: 1.5rem;
+  color: #424242;
+  margin-bottom: 0.5rem;
+}
+
+.score-percentage {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1976d2;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .matching-container {
+    flex-direction: column;
+  }
+  
+  .matching-column {
+    width: 100%;
+  }
+  
+  .quiz-actions {
+    justify-content: center;
+  }
+  
+  .btn-check, .btn-next {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.question-card {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.option {
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.option:active {
+  transform: scale(0.98);
+}
+
+.option.correct {
+  animation: pulseCorrect 1s ease;
+}
+
+.option.incorrect {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes pulseCorrect {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
