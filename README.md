@@ -1,3 +1,9 @@
+INTERACTIVE EDUCATIONAL PLATFORM: LIFE SAFETY BASICS
+
+A full-stack educational project built with **React** and **Spring Boot**, designed for interactive learning of life safety principles.
+
+📎 [Project Presentation (Google Drive)][[https://drive.google.com/ed-platform](https://drive.google.com/file/d/1RLQWbmNNNOS8yDLKXXByobjhYLhkqfzr/view?usp=share_link)]
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
